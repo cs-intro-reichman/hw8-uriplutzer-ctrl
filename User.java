@@ -68,6 +68,10 @@ public class User {
     public boolean addFollowee(String name) {
         //// Replace the following statement with your code
 
+        if (name.equals(this.name)) {
+            return false;
+        }
+
         if (fCount == maxfCount) {
             return false;
         }
