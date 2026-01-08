@@ -180,10 +180,10 @@ public class Network {
     public String toString() {
         //// Replace the following statement with your code
 
-        String ans = "Network:\n";
+        String ans = "Network:";
 
         for (int i = 0; i < userCount; i++) {
-            ans = ans + users[i] + "\n";
+            ans = ans + "\n" + users[i].toString();
         }
 
         return ans;
