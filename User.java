@@ -137,10 +137,18 @@ public class User {
 
     /** Returns this user's name, and the names that s/he follows. */
     public String toString() {
-        String ans = name + " ->";
+
+        String ans = name + " -> ";
+
         for (int i = 0; i < fCount; i++) {
-            ans = ans + " " + follows[i];
+            ans = ans + follows[i];
+
+            if (i != fCount - 1) {
+                ans = ans + " ";
+            }
+
         }
         return ans;
+
     }
 }
